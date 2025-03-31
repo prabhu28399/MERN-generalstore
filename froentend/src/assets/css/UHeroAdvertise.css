@@ -1,0 +1,23 @@
+/* Add this to your global CSS file */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  display: inline-block;
+}
+
+.marquee-container {
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  width: 200%; /* Double width to accommodate duplicates */
+}
