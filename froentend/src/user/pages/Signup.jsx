@@ -3,9 +3,18 @@ import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 
 const Signup = () => {
   return (
-    <div className="min-h-screen bg-slate-200 flex flex-col justify-center py-2 sm:px-4 lg:px-8">
+    <div
+      className="min-h-screen bg-gray-400 flex flex-col justify-center py-2 sm:px-4 lg:px-8"
+      style={{
+        backgroundImage:
+          "url('https://4kwallpapers.com/images/walls/thumbs_3t/16480.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundBlendMode: "multiply",
+      }}
+    >
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mb-4 text-center text-3xl font-extrabold text-gray-900">
+        <h2 className="mb-4 text-center text-white text-3xl font-extrabold text-gray-900">
           Sign Up
         </h2>
       </div>
@@ -16,7 +25,7 @@ const Signup = () => {
             className="w-[50%]  py-8   shadow sm:rounded-l-lg sm:px-10"
             style={{
               backgroundImage:
-                "url('https://4kwallpapers.com/images/walls/thumbs_3t/17806.jpg')",
+                "url('https://4kwallpapers.com/images/walls/thumbs_3t/16480.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundBlendMode: "multiply",
@@ -149,7 +158,7 @@ const Signup = () => {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="/fpwd"
                     className="w-full flex items-center justify-center px-4 py-2 text-sm font-medium text-indigo-600 hover:text-indigo-500"
                   >
                     Forgot password?

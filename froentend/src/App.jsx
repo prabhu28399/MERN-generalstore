@@ -11,6 +11,7 @@ import KathabookName from "./kathabook/pages/KathabookName";
 import Billing from "./billing/pages/Billing";
 import Signup from "./user/pages/Signup";
 import Login from "./user/pages/Login";
+import ForgotPassword from "./user/pages/ForgotPassword";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/uindex" element={<Uindex />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/fpwd" element={<ForgotPassword />} />
 
         {/* inventory routes  */}
         <Route path="/category" element={<INcategory />} />
