@@ -3,9 +3,10 @@ import UheaderCompnt from "../../user/components/UheaderCompnt";
 import Unav from "../../user/sections/Unav";
 import HeroAdvertise from "../../user/components/HeroAdvertise";
 import MoneyCards from "../section/MoneyCards";
-import KathabookList from "../section/KathabookList";
+import KathaNameInfo from "../section/KathaNameInfo";
+// import KathaNameInfo from "../section/KathaNameInfo";
 
-const KathaIndex = () => {
+const KathabookName = () => {
   return (
     <div className="bg-slate-200 min-h-screen">
       <UheaderCompnt />
@@ -25,7 +26,7 @@ const KathaIndex = () => {
             <MoneyCards />
           </div>
           <div className="p-4">
-            <KathabookList />
+            <KathaNameInfo />
           </div>
         </div>
       </div>
@@ -33,4 +34,4 @@ const KathaIndex = () => {
   );
 };
 
-export default KathaIndex;
+export default KathabookName;

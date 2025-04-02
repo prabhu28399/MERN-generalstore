@@ -7,6 +7,10 @@ import INproduct from "./inventory/pages/INproduct";
 import INlocation from "./inventory/pages/INlocation";
 import INstock from "./inventory/pages/INstock";
 import KathaIndex from "./kathabook/pages/KathaIndex";
+import KathabookName from "./kathabook/pages/KathabookName";
+import Billing from "./billing/pages/Billing";
+import Signup from "./user/pages/Signup";
+import Login from "./user/pages/Login";
 
 function App() {
   return (
@@ -14,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HMIndex />} />
         <Route path="/uindex" element={<Uindex />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
 
         {/* inventory routes  */}
         <Route path="/category" element={<INcategory />} />
@@ -23,6 +29,10 @@ function App() {
 
         {/* kathabook routes  */}
         <Route path="/kathabook" element={<KathaIndex />} />
+        <Route path="/kathabook/name" element={<KathabookName />} />
+
+        {/* billing routes  */}
+        <Route path="/billing" element={<Billing />} />
       </Routes>
     </Router>
   );

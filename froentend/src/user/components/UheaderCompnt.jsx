@@ -21,13 +21,25 @@ const UheaderCompnt = () => {
   return (
     <nav className="fixed top-0 left-0 w-full h-12 flex items-center justify-between px-6 bg-white shadow-md z-50">
       {/* Logo Section */}
-      <div className="flex items-center gap-3">
+      {/* <div className="flex items-center gap-3">
         <img
           src="./src/assets/home/pplogo.jpg"
           alt="Logo"
           className="h-10 w-10"
         />
         <h3 className="font-bold text-red-500 text-lg">PRABHA DARLING</h3>
+      </div> */}
+      <div className="flex items-center gap-3">
+        <a href="/uindex" className="flex items-center gap-3">
+          {" "}
+          {/* Added link wrapper */}
+          <img
+            src="./src/assets/home/pplogo.jpg"
+            alt="Logo"
+            className="h-10 w-10"
+          />
+          <h3 className="font-bold text-red-500 text-lg">PRABHA DARLING</h3>
+        </a>
       </div>
 
       {/* Search Bar - 70% width, beside icons */}

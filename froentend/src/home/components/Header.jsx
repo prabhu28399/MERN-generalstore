@@ -54,13 +54,23 @@ const Header = () => {
 
           {/* Dropdown Menu */}
           {isDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg p-2">
+            <div className="absolute right-0 mt-0 w-40 bg-white shadow-lg rounded-lg p-2">
               <ul className="text-gray-800">
-                <li className="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer">
-                  📍 Sign up
+                <li className="hover:bg-gray-100">
+                  <a
+                    href="/signup"
+                    className="flex items-center gap-2 p-2 w-full"
+                  >
+                    📍 Sign up
+                  </a>
                 </li>
-                <li className="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer">
-                  📺 Login
+                <li className="hover:bg-gray-100">
+                  <a
+                    href="/login"
+                    className="flex items-center gap-2 p-2 w-full"
+                  >
+                    📺 Login
+                  </a>
                 </li>
               </ul>
             </div>
