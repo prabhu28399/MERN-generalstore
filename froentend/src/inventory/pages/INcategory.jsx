@@ -2,7 +2,7 @@ import React from "react";
 import UheaderCompnt from "../../user/components/UheaderCompnt";
 import Unav from "../../user/sections/Unav";
 import HeroAdvertise from "../../user/components/HeroAdvertise";
-import AllTables from "./AllTables";
+import CategoryList from "../sections/CategoryList";
 
 const INcategory = () => {
   return (
@@ -21,7 +21,7 @@ const INcategory = () => {
             <HeroAdvertise />
           </div>
           <div className="p-4">
-            <AllTables />
+            <CategoryList />
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@ import React from "react";
 import UheaderCompnt from "../../user/components/UheaderCompnt";
 import Unav from "../../user/sections/Unav";
 import HeroAdvertise from "../../user/components/HeroAdvertise";
-import AllTables from "./AllTables";
 import ProductComponent from "../components/ProductComponent";
 
 const INproduct = () => {

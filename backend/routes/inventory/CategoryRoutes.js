@@ -27,14 +27,18 @@ router.get("/:id", async (req, res) => {
 
 // CREATE category
 router.post("/", async (req, res) => {
-  const { categoryname } = req.body;
+  const { categoryname, categoryid } = req.body; // Extract both categoryname and categoryid
 
   if (!categoryname) {
     return res.status(400).json({ message: "Category name is required" });
   }
 
+  if (!categoryid) {
+    return res.status(400).json({ message: "Category ID is required" });
+  }
+
   try {
-    const newCategory = new Category({ categoryname });
+    const newCategory = new Category({ categoryname, categoryid }); // Include categoryid here
     await newCategory.save();
     res.status(201).json(newCategory);
   } catch (err) {

@@ -12,6 +12,7 @@ exports.getCategories = async (req, res) => {
 exports.addCategory = async (req, res) => {
   const category = new Category({
     categoryname: req.body.categoryname,
+    categoryid: req.body.categoryid,
   });
 
   try {
